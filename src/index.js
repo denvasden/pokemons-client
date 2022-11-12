@@ -1,16 +1,20 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import {Provider} from "react-redux";
 
 import reportWebVitals from "./reportWebVitals";
+import store from "./redux";
 import Application from "./Application";
 
-import "./index.css";
+import "./index.scss";
 
 const ReactDOMRoot = ReactDOM.createRoot(document.querySelector("#application"));
 
 ReactDOMRoot.render(
   <React.StrictMode>
-    <Application/>
+    <Provider store={store}>
+      <Application/>
+    </Provider>
   </React.StrictMode>
 );
 

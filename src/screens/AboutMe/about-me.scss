@@ -1,0 +1,12 @@
+.about-me {
+  margin: 0 auto;
+  max-width: 768px;
+
+  header + main {
+    margin-top: 32px;
+  }
+
+  p + p {
+    margin-top: 16px;
+  }
+}

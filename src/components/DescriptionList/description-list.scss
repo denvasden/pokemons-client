@@ -1,0 +1,30 @@
+.description-list {
+  margin: 0;
+}
+
+.description-list_landscape {
+  align-items: start;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: start;
+
+  .description-term {
+    flex-basis: 100%;
+    margin-bottom: 4px;
+  }
+
+  .description-details {
+    margin-right: 8px;
+  }
+
+}
+
+.description-term {
+  font-weight: bold;
+  margin: 0;
+}
+
+.description-details {
+  margin: 0;
+}

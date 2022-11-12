@@ -1,0 +1,27 @@
+.initial {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  .unordered-list {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    .unordered-list__item {
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    .unordered-list__item + .unordered-list__item {
+      margin-left: 16px;
+    }
+  }
+}

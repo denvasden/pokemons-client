@@ -1,0 +1,36 @@
+.pokemons {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: center;
+
+  .pokemons__table {
+    border-collapse: collapse;
+
+    td,
+    th {
+      border: 1px solid #000000;
+      padding: 8px;
+    }
+
+    tbody {
+      tr:hover {
+        background-color: rgba(#000000, 0.08);
+        cursor: pointer;
+      }
+    }
+  }
+
+  .pokemon-name {
+    display: inline-block;
+  }
+
+  .pokemon-name::first-letter {
+    text-transform: uppercase;
+  }
+
+  .pokemons__header + .pokemons__main {
+    margin-top: 40px;
+  }
+}
